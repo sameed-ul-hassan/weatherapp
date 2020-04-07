@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="mainHeading">
+        <h1>
+            Welcome to the weather app
+        </h1>
+        <p>get the weather condition of your city</p>
+    </div>
+    <div class="formDiv d-flex justify-content-center">
+        <input type="text" class="cityName" placeholder="Enter City Name" />
+        <button class="submit">Submit</button>
+    </div>
+    <p class="err"></p>
+    <div class="cityData d-flex d-none">
+        <div class="w-50 pl-20">
+            <h4 class="city roboto mb-0"></h4>
+            <p class="dateTime roboto my-0"></p>
+            <p class="des roboto my-0"></p>
+            <div class="pl-30 d-flex align-item-center">
+                <img src="" class="icon" alt="" />
+                <h3 class="p-relative">
+                    <span class="temp roboto"></span>
+                    <span class="p-absolute">&#8451;</span>
+                </h3>
+            </div>
+        </div>
+        <div class="w-50 rightDiv d-flex ml-100 pb-35 flex-column justify-content-end">
+            <p class="roboto mb-0">Humadity :<span class="hum"></span>%</p>
+            <p class="roboto my-0">Wind :<span class="wind"></span></p>
+            <p class="roboto my-0">Pressure :<span class="pres"></span>km/h</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
