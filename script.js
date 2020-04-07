@@ -22,7 +22,7 @@ submitBtn.addEventListener("click", function() {
     var method = "GET";
     var apiKey = "d7ae931a7d35c52db3a36a9b925a656d";
     var url =
-        "http://api.openweathermap.org/data/2.5/weather?q=" +
+        "https://api.openweathermap.org/data/2.5/weather?q=" +
         cityName +
         "&units=metric&appid=" +
         apiKey;
