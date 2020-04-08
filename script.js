@@ -12,10 +12,12 @@ var hum = document.querySelector(".hum");
 var wind = document.querySelector(".wind");
 var pres = document.querySelector(".pres");
 var err = document.querySelector(".err");
+var loader = document.querySelector(".loader");
 
 // Add event listner
 submitBtn.addEventListener("click", function() {
     dataDiv.classList.add("d-none");
+    loader.classList.remove("d-none");
     err.textContent = "";
     var cityName = textBox.value;
     var request = new XMLHttpRequest();
@@ -57,6 +59,7 @@ submitBtn.addEventListener("click", function() {
             function incrementCounter() {
                 counter++;
                 if (counter === len) {
+                    loader.classList.add("d-none");
                     dataDiv.classList.remove("d-none");
                 }
             }
@@ -124,7 +127,9 @@ Object.defineProperty(Weather.prototype, "time", {
         var date = dateTime.getDate();
         var hour = dateTime.getHours();
         var min = dateTime.getMinutes();
-
+        if (min < 10) {
+            min = "0" + min;
+        }
         this._time = date + " " + month + " " + hour + ":" + min;
     },
 });

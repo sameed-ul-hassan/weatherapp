@@ -84,6 +84,18 @@ body {
     margin: 10px auto;
 }
 
+.loader {
+    width: 98px;
+    margin: 0 auto;
+    height: 134px;
+}
+
+.loader img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
 
 /* Extra Classes */
 
@@ -206,5 +218,23 @@ ml-100 {
     }
     .justify-content-end {
         justify-content: flex-start;
+    }
+    .cityData.d-flex {
+        display: block;
+    }
+    .leftDiv.w-50 {
+        width: 98%;
+    }
+    .rightDiv {
+        padding-left: 20%;
+        overflow: hidden;
+    }
+    .rightDiv.w-50 {
+        width: 80%;
+    }
+    .mainHeading h1,
+    .mainHeading p {
+        width: 95%;
+        margin: 20px auto;
     }
 }
