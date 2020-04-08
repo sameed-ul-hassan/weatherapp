@@ -67,6 +67,7 @@ submitBtn.addEventListener("click", function() {
             request.readyState == XMLHttpRequest.done ||
             this.status == 404
         ) {
+            loader.classList.add("d-none");
             err.textContent = "City name is incorrect";
         }
     };
